@@ -1,6 +1,24 @@
 <template>
+    
+    <lightning-card title="Oninput">
 
-    <div>*Property Binding*</div>
-    <h1>Hello {dynamicBinding}</h1>
+        <input type="text" value={isim} oninput={handleInput}>
+        <div>*Property Binding*</div>
+        <h1>Isim:{isim}</h1>
+
+    </lightning-card>
+
+    <lightning-card title="Ornek Iki">
+
+        <!--lightning-input kullanildiginda onclick ve oninput elementleri calismaz.
+        Bunlar yerine onchange elenti kullanilabilir-->
+
+        <lightning-input type="text" label="Enter Your Name" onchange={handleChange}></lightning-input>
+
+        <lightning-input type="text" label="Enter Your Lastname" onchange={handleChange2}></lightning-input>
+
+        <h1>Full Name:{name} {lastname}</h1>
+
+    </lightning-card>
     
 </template>
