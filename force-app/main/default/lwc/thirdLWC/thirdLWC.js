@@ -4,7 +4,7 @@ export default class ThirdLWC extends LightningElement {
 
     name = 'Onur'
 
-    handleChange(deger){
+    handleBlur(deger){
 
         this.name=deger.target.value;
 
