@@ -10,14 +10,14 @@ export default class GetterPratikLWC extends LightningElement {
         this.num1=event.target.value;
     }
 
-    handleNum1(event){
+    handleNum2(event2){
 
-        this.num2=event.target.value;
+        this.num2=event2.target.value;
     }
 
     get total(){
 
-        return `${parseInt(this.num1)} + ${parseInt(this.num2)}`;
+        return `${parseInt(this.num1) + parseInt(this.num2)}`;
 
     }
 
