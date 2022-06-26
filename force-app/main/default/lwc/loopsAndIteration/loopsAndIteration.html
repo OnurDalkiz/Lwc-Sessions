@@ -1,0 +1,64 @@
+<template>
+
+<!--     <lightning-card title="For:Each">
+        <ul>
+            <template for:each={customerList} for:item="eachCustomer">
+                <li key={eachCustomer.Id}>
+                    <h1>{eachCustomer.name}</h1>
+                    <h1>{eachCustomer.phone}</h1>
+                    <h1>{eachCustomer.email}</h1>
+                    <img src={eachCustomer.imgURL}>
+                </li>
+            </template>
+        </ul>
+    </lightning-card> -->
+
+<!--     <lightning-card title="Iterator">
+        <ul>
+            <template iterator:it={customerList}>
+                <li key={it.value.id}>
+                    <h1>{it.value.name}</h1>
+                    <h1>{it.value.phone}</h1>
+                    <h1>{it.value.email}</h1>
+                    <img src={it.value.imgURL}>
+                </li>
+            </template>
+        </ul>
+    </lightning-card> -->
+
+<!--     <lightning-card title="FIRST-LAST">
+
+        <template iterator:it={customerList}>
+
+            <p key={it.value} if:true={it.first}>
+                {it.value.name}
+                <img src={it.value.imgURL}>
+            </p>
+            <p key={it.value} if:true={it.last}>
+                LAST : {it.value.name}
+            </p>
+
+        </template>
+
+    </lightning-card> -->
+
+    <lightning-card title="First-Last Iterator">
+
+        <template iterator:it={cityList}>
+
+            <p key={it.value} if:true={it.first} style="color:blue">******************************</p>
+
+            <p key={it.value} style="color:chartreuse">{it.value}</p>
+
+            <p key={it.value} if:true={it.last} style="color:blueviolet">==============================</p>
+
+        </template>
+
+
+    </lightning-card>
+
+
+
+
+    
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="ForEachIteration">
+        <template for:each={cityList} for:item="eachCity">
+            <p key={eachCity}>{eachCity}</p>
+
+        </template>
+
+        <template iterator:it={cityList}>
+
+            <p key={it.value}>{it.value}</p>
+
+        </template>
+    </lightning-card>
+    
+</template>
