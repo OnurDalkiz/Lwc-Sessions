@@ -1,0 +1,22 @@
+:host{
+    /* color:  blue; */
+    --custom-bg-color: orange;
+    --custom-color: pink;
+}
+
+h1{
+    color: red;
+}
+p{
+    color: green;
+}
+/* c-my-child-component{
+    --custom-bg-color:green;
+    --custom-color:antiquewhite;
+}  */
+
+
+/* c-my-child-component elementinin altindaki h1 elementlerine uygulanamaz hoca da yapamadi ogrenmemiz lazim.
+c-my-child-component h1{
+    color: blue;
+} */

@@ -1,0 +1,11 @@
+/* child icindeki css style sadece child icindeki elementlere etki eder. */
+h1{
+    color: chartreuse;
+    background-color: black;
+}
+
+/* custom CSS hook olusturuldu(Parenttan degisiklik yapmak icin) */
+h2{
+    background-color: var(--custom-bg-color, purple);
+    color: var(--custom-color,yellow);
+} 
