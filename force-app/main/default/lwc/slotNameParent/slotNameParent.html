@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Slot Name Parent">
+        <lightning-input type="text" label="Country : " onchange={handleCountryChange}></lightning-input> 
+        <lightning-input type="text" label="City : " onchange={handleCityChange}></lightning-input> 
+        <lightning-input type="text" label="Famous For : " onchange={handleFamousChange}></lightning-input>
+
+        <c-slot-name-child-country>
+            <span slot="country">{country}</span>
+            <span slot="city">{city}</span>
+            <span slot="famousFor">{famousFor}</span>
+        </c-slot-name-child-country>
+
+    </lightning-card>
+</template>

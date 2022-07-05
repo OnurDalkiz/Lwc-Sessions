@@ -1,12 +1,14 @@
 <template>
     <lightning-card title="Car Component">
         <h1>BMW</h1>
+        <!-- Kullanicidan data almak icin Input olusturuldu -->
+        <lightning-input type="text" label="Please Enter Engine Model" onchange={handleChange}></lightning-input>
         <!-- Engine Modele burada yani owner da deger atandi
         engineModel >>>> engine-model -->
         <c-car-engine 
-        engine-model="Turbo Diesel"
+        engine-model={engineModel}
         ></c-car-engine>
         <!-- <c-car-engine-feature></c-car-engine-feature> -->
     </lightning-card>
-    
+
 </template>

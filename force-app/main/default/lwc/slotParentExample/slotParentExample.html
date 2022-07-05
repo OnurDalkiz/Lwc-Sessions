@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Parent Slot">
+        <h1>1.Parent Header</h1>
+        <c-slot-child-example>
+            <h2>2.Paragraf Parent</h2>
+            <p>3.Paragraf Parent</p>
+        </c-slot-child-example>
+        <p>4.Parent Paragraf</p>
+
+        <c-slot-name-child>
+            <h2 slot="parent">2.Paragraf Parent</h2>
+            <h1 slot="sonkisim">3.Paragraf Parent</h1> 
+            <p>4.Paragraf</p>
+        </c-slot-name-child>
+
+    </lightning-card>
+</template>
