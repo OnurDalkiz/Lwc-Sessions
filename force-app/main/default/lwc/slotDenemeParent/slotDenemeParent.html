@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Slot Parent">
+        <lightning-input type="text" label="Isim Soyisim" onchange={handleChild} ></lightning-input>
+
+        <c-slot-deneme-child>
+
+            <span slot="first">Isim Soyisim:{nameLastname}</span>
+
+        </c-slot-deneme-child>
+    </lightning-card>
+</template>
